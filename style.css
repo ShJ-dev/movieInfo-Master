@@ -1,0 +1,50 @@
+#movies img, #movie img{
+  width:100%;
+}
+
+@media(min-width:960px){
+  #movies .col-md-3 .well{
+    height: 390px;
+  }
+
+  #movies .col-md-3 img{
+    height:240px;
+  }
+}
+body{
+  background-image: linear-gradient(to right, rgb(22, 34, 42), rgb(58, 96, 115)) !important;
+}
+#movieInfo{
+  width:100%;
+  background-image: linear-gradient(to right, rgb(255, 239, 186), rgb(255, 255, 255));
+}
+#movieSearch{
+  background-image:linear-gradient(to right, rgb(255, 153, 102), rgb(255, 94, 98));
+}
+#movieSearch.hover{
+  background-image:linear-gradient(to right, rgb(255, 153, 102), rgb(255, 94, 98));
+  border:solid black 1px !important;
+
+}
+#movieDetails{
+  background-image:linear-gradient(to right, rgb(253, 200, 48), rgb(243, 115, 53));
+}
+#imdb:hover{
+  opacity: 0.7;
+}
+#backToSearch{
+  background-image:linear-gradient(to right, rgb(211, 204, 227), rgb(233, 228, 240));
+  color:black;
+}
+#backToSearch:hover{
+  background-image:linear-gradient(to right, rgb(211, 204, 227), rgb(233, 228, 240));
+  color:Black;
+  border: black solid 3px 3px;
+  opacity: 0.5;
+}
+#viewDetails{
+  background-image: linear-gradient(to right, rgb(0, 180, 219), rgb(0, 131, 176));
+}
+#viewDetails:hover{
+  background-image:linear-gradient(to right, rgb(253, 200, 48), rgb(243, 115, 53));
+}
