@@ -68,8 +68,8 @@ function getMovie(){
     </div>
     <div class="row">
       <div class="well">
-        <h3 style="color:#c1264c">Plot</h3>
-        <p style="color:white">${movie.Plot}</p>
+        <h3 class="ml-2 mt-2" style="color:#c1264c">Plot</h3>
+        <p class="ml-2 mr-2" style="color:white">${movie.Plot}</p>
         <hr>
         
         <a href="https://imdb.com/title/${movie.imdbID}" target="_blank" id="imdb" class="btn " style="background-color:#ffdf00" ><b style="color:black">View IMDB</b></a>
