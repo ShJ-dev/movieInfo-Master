@@ -6,7 +6,7 @@ document.getElementById('movieSearch').onclick = function(e){
 };
 
 function showMovies(searchText) {
-  fetch('http://www.omdbapi.com/?apikey=aefdca0d&s=' + searchText)
+  fetch('https://www.omdbapi.com/?apikey=aefdca0d&s=' + searchText)
     .then(function (response) {
       console.log(response);
       return response.json();
@@ -38,7 +38,7 @@ function movieSelected(id){
 function getMovie(){
   let movieId= sessionStorage.getItem('movieId');
 
-  fetch('http://www.omdbapi.com/?apikey=aefdca0d&i=' + movieId)
+  fetch('https://www.omdbapi.com/?apikey=aefdca0d&i=' + movieId)
   .then(function(response){
     console.log(response);
     return response.json();
@@ -72,7 +72,7 @@ function getMovie(){
         <p style="color:white">${movie.Plot}</p>
         <hr>
         
-        <a href="http://imdb.com/title/${movie.imdbID}" target="_blank" id="imdb" class="btn " style="background-color:#ffdf00" ><b style="color:black">View IMDB</b></a>
+        <a href="https://imdb.com/title/${movie.imdbID}" target="_blank" id="imdb" class="btn " style="background-color:#ffdf00" ><b style="color:black">View IMDB</b></a>
         
         <a href="index.html" id="backToSearch" class="btn btn-default">Go Back To Search</a>
       </div>
